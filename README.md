@@ -15,7 +15,7 @@ Elyes Borji
 Dhia Borji : Sign Up / Sign In
 
 
-Assil Hammami: View profile/ Edit profile
+Assil Hammami: View profile/ Edit profile/homepage
 
 
 
