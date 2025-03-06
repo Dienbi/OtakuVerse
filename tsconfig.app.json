@@ -1,26 +1,23 @@
 {
+  "extends": "./tsconfig.json", // Hérite des options de base si elles existent
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "tsBuildInfoFile": "./tsconfig.app.tsbuildinfo", // Déplace hors de node_modules pour éviter les problèmes
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": true, // Conserver si Vite gère la compilation
     "jsx": "react-jsx",
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"], // Inclure tous les fichiers dans src/ et ses sous-dossiers
+  "exclude": ["node_modules", "dist"] // Exclure les dossiers inutiles
 }
