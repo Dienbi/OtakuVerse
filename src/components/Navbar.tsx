@@ -35,18 +35,13 @@ const Navbar = () => {
           <img src={bell} alt="Notifications" className="h-8 w-auto mb-1" />
           <Link to="/notifications" className="text-xs font-bold">NOTIFICATION</Link>
         </li>
-        <li>
-          <Link to="/view-profile" className="text-white">View Profile</Link>
-        </li>
-        <li>
-          <Link to="/modify-profile" className="text-white">Modify Profile</Link>
-        </li>
+       
       </ul>
 
       {/* Right - Profile Section */}
       <div className="flex items-center gap-2 mr-6">
         <img src={profile} alt="Profile" className="h-8 w-auto" />
-        <Link to="/profile" className="text-xs font-bold">PROFILE</Link>
+        <Link to="/view-profile" className="text-xs font-bold">PROFILE</Link>
         <FaChevronDown size={14} />
       </div>
     </nav>
