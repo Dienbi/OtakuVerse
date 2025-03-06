@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa"; // For dropdown arrow
 import logo from "../assets/images/konoha logo.png";
+
 import home from "../assets/images/home.png";
 import profile from "../assets/images/profile.png";
 import forum from "../assets/images/forum.png";
@@ -36,6 +37,12 @@ const Navbar = () => {
             <NotificationPanel />
           </div>
           <span className="text-xs font-bold">NOTIFICATION</span>
+        </li>
+        <li>
+          <Link to="/view-profile" className="text-white">View Profile</Link>
+        </li>
+        <li>
+          <Link to="/modify-profile" className="text-white">Modify Profile</Link>
         </li>
       </ul>
 
