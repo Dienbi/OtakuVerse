@@ -17,7 +17,7 @@ Dhia Borji : Sign Up / Sign In
 
 Assil Hammami: View profile/ Edit profile/homepage
 
-
+Wassim Trabelsi:Detail produit1/Detail produit2
 
 
 # how to run the project:
