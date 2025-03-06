@@ -69,7 +69,8 @@ const DetailProduit: React.FC = () => {
             />
           </h2>
 
-          <p className="mb-4 text-3xl font-bold">$100</p>
+          <p className="mb-4 text-3xl font-bold text-center">$100</p>
+
 
           <div className="mb-4">
             <p className="mb-2 text-lg font-bold tracking-wide"> <img
