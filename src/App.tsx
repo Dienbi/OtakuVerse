@@ -6,6 +6,8 @@ import Login from "./pages/Login"; // Import Login component
 import ModifyProfile from "./pages/ModifyProfile";
 import ViewProfile from "./pages/ViewProfile";
 import Home from "./pages/home";
+import DetailProduit from "./pages/DetailProduit" // Importez le composant DetailProduit
+import DetailProduit2 from "./pages/DetailProduit2" // Importez le composant DetailProduit
 function App() {
   return (
     <Router>
@@ -17,6 +19,8 @@ function App() {
           <Route path="/login" element={<Login />} /> {/* Added login route */}
           <Route path="/modify-profile" element={<ModifyProfile />} />
           <Route path="/view-profile" element={<ViewProfile />} />
+          <Route path="/detail" element={<DetailProduit />} /> {/* Added login route */}
+          <Route path="/detail2" element={<DetailProduit2 />} /> {/* Added login route */}
         </Routes>
         <Footer />
       </div>
