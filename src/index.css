@@ -1,64 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+  letter-spacing: 0.05em;
+}
+
 :root {
-  --background: 342, 93%, 24%; /* Dark red background */
-  --foreground: 0 0% 100%; /* White text */
+  /* Notification specific colors */
+  --notification-bg: 342, 93%, 45%;
+  --notification-banner: 342, 93%, 35%;
+  --notification-button: 210, 100%, 50%;
+  --notification-dismiss: 0, 0%, 40%;
+  --notification-view: 210, 100%, 50%;
+  --notification-star: 210, 100%, 70%;
+  --notification-eye: 45, 100%, 50%;
+  --notification-avatar: 342, 93%, 65%;
+  --notification-text: 0, 0%, 80%;
 
-  --card: 350 80% 20%; /* Deep red card */
+  /* Base theme colors */
+  --background: 342, 93%, 24%;
+  --foreground: 0 0% 100%;
+  --card: 350 80% 20%;
   --card-foreground: 0 0% 100%;
-
   --popover: 350 80% 20%;
   --popover-foreground: 0 0% 100%;
-
-  --primary: 0 84% 44%; /* Bright red primary */
+  --primary: 0 84% 44%;
   --primary-foreground: 0 0% 100%;
-
-  --secondary: 330 50% 40%; /* Dark pink secondary */
+  --secondary: 330 50% 40%;
   --secondary-foreground: 0 0% 100%;
-
   --muted: 330 30% 30%;
   --muted-foreground: 0 0% 80%;
-
   --accent: 350 80% 40%;
   --accent-foreground: 0 0% 100%;
-
   --destructive: 0 100% 30%;
   --destructive-foreground: 0 0% 100%;
-
   --border: 350 30% 50%;
   --input: 350 30% 50%;
   --ring: 0 100% 44%;
-
   --radius: 0.5rem;
 }
 
 .dark {
-  --background: 350 80% 15%; /* Darker red background */
+  --background: 350 80% 15%;
   --foreground: 0 0% 100%;
-
   --card: 350 80% 20%;
   --card-foreground: 0 0% 100%;
-
   --popover: 350 80% 20%;
   --popover-foreground: 0 0% 100%;
-
   --primary: 0 100% 44%;
   --primary-foreground: 0 0% 100%;
-
   --secondary: 330 50% 40%;
   --secondary-foreground: 0 0% 100%;
-
   --muted: 330 30% 30%;
   --muted-foreground: 0 0% 80%;
-
   --accent: 350 80% 40%;
   --accent-foreground: 0 0% 100%;
-
   --destructive: 0 100% 30%;
   --destructive-foreground: 0 0% 100%;
-
   --border: 350 30% 50%;
   --input: 350 30% 50%;
   --ring: 0 100% 44%;
@@ -67,6 +70,7 @@
 * {
   @apply border-border;
 }
+
 body {
   @apply bg-background text-foreground;
 }

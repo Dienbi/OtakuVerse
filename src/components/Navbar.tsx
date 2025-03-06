@@ -8,6 +8,7 @@ import profile from "../assets/images/profile.png";
 import forum from "../assets/images/forum.png";
 import product from "../assets/images/product.png";
 import bell from "../assets/images/bell.png";
+import NotificationPanel from "./NotificationPanel"
 
 const Navbar = () => {
   return (
@@ -29,11 +30,13 @@ const Navbar = () => {
         </li>
         <li className="flex flex-col items-center">
           <img src={forum} alt="Forum" className="h-8 w-auto mb-1" />
-          <Link to="/forum" className="text-xs font-bold">FORUM</Link>
+          <Link to="/chat" className="text-xs font-bold">FORUM</Link> {/* Redirige vers /chat */}
         </li>
-        <li className="flex flex-col items-center">
-          <img src={bell} alt="Notifications" className="h-8 w-auto mb-1" />
-          <Link to="/notifications" className="text-xs font-bold">NOTIFICATION</Link>
+        <li className="flex flex-col items-center relative">
+          <div className="h-8 w-auto mb-1 flex items-center justify-center">
+            <NotificationPanel />
+          </div>
+          <span className="text-xs font-bold">NOTIFICATION</span>
         </li>
        
       </ul>

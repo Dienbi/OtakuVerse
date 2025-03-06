@@ -6,6 +6,13 @@ import Login from "./pages/Login"; // Import Login component
 import ModifyProfile from "./pages/ModifyProfile";
 import ViewProfile from "./pages/ViewProfile";
 import Home from "./pages/home";
+import DetailProduit from "./pages/DetailProduit" // Importez le composant DetailProduit
+import DetailProduit2 from "./pages/DetailProduit2" // Importez le composant DetailProduit
+import NotificationsPage from "./pages/Notifications" // Import de la page de notifications
+
+import Chat from "./pages/Chat";
+import Review from "./pages/Review";
+
 function App() {
   return (
     <Router>
@@ -17,11 +24,18 @@ function App() {
           <Route path="/login" element={<Login />} /> {/* Added login route */}
           <Route path="/modify-profile" element={<ModifyProfile />} />
           <Route path="/view-profile" element={<ViewProfile />} />
+          <Route path="/detail" element={<DetailProduit />} /> {/* Added login route */}
+          <Route path="/detail2" element={<DetailProduit2 />} /> {/* Added login route */}
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/notifications" element={<NotificationsPage />} /> {/* Ajout de la route notifications */}
+          <Route path="/chat" element={<Chat />} /> {/* Route pour le chat */}
+          <Route path="/review" element={<Review />} /> {/* Route pour les reviews */}
         </Routes>
         <Footer />
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
