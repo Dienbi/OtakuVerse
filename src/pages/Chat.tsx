@@ -14,7 +14,7 @@ export default function ChatForum() {
           <div className="absolute inset-0 bg-[#c3073f] opacity-80"></div>
         </div>
       </div>
-
+      {/* chat forum background */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-70">
         <div className="w-full max-w-3xl rounded-lg bg-[#c3073f]/80 p-8 backdrop-blur-sm">
           <div className="mb-8 flex justify-center">
