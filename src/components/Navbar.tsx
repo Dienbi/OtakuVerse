@@ -38,12 +38,7 @@ const Navbar = () => {
           </div>
           <span className="text-xs font-bold">NOTIFICATION</span>
         </li>
-        <li>
-          <Link to="/view-profile" className="text-white">View Profile</Link>
-        </li>
-        <li>
-          <Link to="/modify-profile" className="text-white">Modify Profile</Link>
-        </li>
+  
         <li>
           <Link to="/review" className="text-white">Review</Link> {/* Bouton Review sans icône */}
         </li>
