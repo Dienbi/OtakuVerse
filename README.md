@@ -19,7 +19,7 @@ Assil Hammami: View profile/ Edit profile
 
 Elyess borji : chat forum / Review
 
-
+Wassim Trabelsi:Detail produit1/Detail produit2
 
 
 # how to run the project:
