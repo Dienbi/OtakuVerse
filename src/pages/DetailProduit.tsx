@@ -4,9 +4,11 @@ import naruto from "../assets/images/naruto-1-kana.webp";
 import nukuregular from "../assets/images/nkukur1.webp";
 import wassim from "../assets/images/wassim.jpg";
 import bye from "../assets/images/bbbbbbbb.webp";
+import aa from "../assets/images/100.webp";
 import savedorlater from "../assets/images/svsv.webp";
 import demons from "../assets/images/demons.webp";
 import phbook from "../assets/images/phbook.webp";
+
 import { JSX } from "react";
 import { useNavigate } from "react-router-dom";  // Importer useNavigate
 
@@ -69,7 +71,11 @@ const DetailProduit: React.FC = () => {
             />
           </h2>
 
-          <p className="mb-4 text-3xl font-bold text-center">$100</p>
+          <p className="mb-4 text-3xl font-bold text-center">  <img
+              src={demons}
+              alt="Demon Slayer Volume 1 Cover"
+              className="mt-4 mb-4 block mx-auto"
+            /></p>
 
 
           <div className="mb-4">
