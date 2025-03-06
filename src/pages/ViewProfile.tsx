@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; // Compatible avec Vite
 import itachi from "../assets/images/itachi.png";
-
+import profileImage from "../assets/images/user.webp"; // Remplace par ton image
 export default function ViewProfile() {
   return (
     <main className="flex-grow flex">
@@ -17,7 +17,12 @@ export default function ViewProfile() {
       {/* Right Side - Profile Info (design amélioré) */}
       <div className="w-1/2 bg-white flex flex-col items-center justify-center p-8">
         <div className="w-full max-w-md bg-gray-100 rounded-lg shadow-lg p-6 space-y-6">
-          <h2 className="text-2xl font-bold text-center text-[#8E0E2F] uppercase">User Information</h2>
+       
+
+<h2 className="flex justify-center">
+  <img src={profileImage} alt="Profile" className="h-12 w-auto" />
+</h2>
+
 
           <div className="space-y-4">
             <div className="flex items-center border-b border-gray-300 pb-2">

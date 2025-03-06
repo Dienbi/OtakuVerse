@@ -6,6 +6,7 @@ import demon from "../assets/images/demon.jfif";
 import berserk from "../assets/images/berserk.jfif";
 import one from "../assets/images/one-piece.png";
 import sakamoto from "../assets/images/Sakamoto.png";
+import otakuLogo from "../assets/images/WELCOME.webp"; 
 
 export default function Home() {
   const products = [
@@ -31,9 +32,9 @@ export default function Home() {
             />
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-5xl font-bold text-[#e91e63] tracking-wider px-4 py-2">
-              WELCOME TO OTAKU VERSE
-            </h1>
+          <h1 className="flex justify-center">
+  <img src={otakuLogo} alt="Otaku Verse" className="h-16 w-auto" />
+</h1>
           </div>
         </div>
         {/* Product List Section */}
