@@ -50,7 +50,7 @@ export default function Home() {
                   key={product.id}
                   className="bg-white rounded-md overflow-hidden max-w-[250px] mx-auto flex flex-col h-[320px] justify-between shadow-lg"
                 >
-                  <Link to={`/products/${product.slug}`} className="flex flex-col h-full">
+                   <Link to="/detail" className="flex flex-col h-full">
                     <div className="flex-grow flex items-center justify-center p-4">
                       <img
                         src={product.image || "/placeholder.svg"}
