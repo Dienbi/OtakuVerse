@@ -9,50 +9,20 @@ import sakamoto from "../assets/images/Sakamoto.png";
 
 export default function Home() {
   const products = [
-    {
-      id: 1,
-      name: "NARUTO",
-      image: naruto,
-      slug: "naruto",
-    },
-    {
-      id: 2,
-      name: "DRAGON BALL",
-      image: dragon,
-      slug: "dragon-ball",
-    },
-    {
-      id: 3,
-      name: "DEMON SLAYER",
-      image: demon,
-      slug: "demon-slayer",
-    },
-    {
-      id: 4,
-      name: "BERSERK",
-      image: berserk,
-      slug: "berserk",
-    },
-    {
-      id: 5,
-      name: "ONE PIECE",
-      image: one,
-      slug: "one-piece",
-    },
-    {
-      id: 6,
-      name: "SAKAMOTO DAYS",
-      image: sakamoto,
-      slug: "sakamoto-days",
-    },
+    { id: 1, name: "NARUTO", image: naruto, slug: "naruto" },
+    { id: 2, name: "DRAGON BALL", image: dragon, slug: "dragon-ball" },
+    { id: 3, name: "DEMON SLAYER", image: demon, slug: "demon-slayer" },
+    { id: 4, name: "BERSERK", image: berserk, slug: "berserk" },
+    { id: 5, name: "ONE PIECE", image: one, slug: "one-piece" },
+    { id: 6, name: "SAKAMOTO DAYS", image: sakamoto, slug: "sakamoto-days" },
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-black">
       {/* Main Content */}
       <main className="flex-grow flex flex-col">
-        {/* Hero Section with Manga Background */}
-        <div className="relative h-96 overflow-hidden"> {/* Increased from h-48 to h-96 */}
+        {/* Hero Section */}
+        <div className="relative h-96 overflow-hidden">
           <div className="absolute inset-0 bg-gray-300">
             <img
               src={otkauback}
@@ -66,7 +36,6 @@ export default function Home() {
             </h1>
           </div>
         </div>
-
         {/* Product List Section */}
         <div className="bg-[#8E0E2F] text-white p-6">
           <div className="container mx-auto">
@@ -74,18 +43,21 @@ export default function Home() {
               PRODUCT LIST
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {products.map((product) => (
-                <div key={product.id} className="bg-white rounded-md overflow-hidden max-w-[200px] mx-auto">
-                  <Link to={`/products/${product.slug}`}>
-                    <div className="aspect-[3/4] relative">
+                <div
+                  key={product.id}
+                  className="bg-white rounded-md overflow-hidden max-w-[250px] mx-auto flex flex-col h-[320px] justify-between shadow-lg"
+                >
+                  <Link to={`/products/${product.slug}`} className="flex flex-col h-full">
+                    <div className="flex-grow flex items-center justify-center p-4">
                       <img
                         src={product.image || "/placeholder.svg"}
                         alt={product.name}
-                        className="w-full h-full object-contain"
+                        className="max-h-[240px] object-contain"
                       />
                     </div>
-                    <div className="bg-white text-[#8E0E2F] p-2 text-center font-bold text-sm">
+                    <div className="bg-white text-[#8E0E2F] p-3 text-center font-bold text-lg w-full">
                       {product.name}
                     </div>
                   </Link>
