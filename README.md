@@ -14,14 +14,12 @@ Elyes Borji
 # Tasks:
 Dhia Borji : Sign Up / Sign In
 
-
-Assil Hammami: View profile/ Edit profile
+Gaidi Oumaima : Notification/Notification Panel
+Assil Hammami: View profile/ Edit profile/Home page 
 
 Elyess borji : chat forum / Review
 
 Wassim Trabelsi:Detail produit1/Detail produit2
-
-Gaidi Oumaima: Notification/ Notification Panel
 
 
 # how to run the project:
@@ -29,16 +27,18 @@ Gaidi Oumaima: Notification/ Notification Panel
  npm install in the terminal
  npm run dev 
  # routes
- /signup : sign up page
+ "/signup"  : signup page 
+ "/login" : login page 
+ "/modify-profile" : modify profile page
+ "/view-profile" : view profile page 
+ "/detail" : product detail page 
+ "/detail2" : product detail page 2 and payment confirmation   
 
- /login : login page
+ "/notifications" : Notification page 
+ "/chat"  : chat page
+ "/review"  : reviews page
 
- /modify-profile : modify profile page
 
- /view-profile :view profile page
 
- /detail : products detail
-
- /detail2: product detail
 
  
