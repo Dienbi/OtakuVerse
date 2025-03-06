@@ -5,6 +5,9 @@ import SignUp from "./pages/Signup"; // Import SignUp component
 import Login from "./pages/Login"; // Import Login component
 import ModifyProfile from "./pages/ModifyProfile";
 import ViewProfile from "./pages/ViewProfile";
+import Chat from "./pages/Chat";
+import Review from "./pages/Review";
+
 function App() {
   return (
     <Router>
@@ -15,6 +18,8 @@ function App() {
           <Route path="/login" element={<Login />} /> {/* Added login route */}
           <Route path="/modify-profile" element={<ModifyProfile />} />
           <Route path="/view-profile" element={<ViewProfile />} />
+          <Route path="/chat" element={<Chat />} /> {/* Route pour le chat */}
+          <Route path="/review" element={<Review />} /> {/* Route pour les reviews */}
         </Routes>
         <Footer />
       </div>

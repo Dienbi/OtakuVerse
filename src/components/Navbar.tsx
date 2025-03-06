@@ -29,7 +29,7 @@ const Navbar = () => {
         </li>
         <li className="flex flex-col items-center">
           <img src={forum} alt="Forum" className="h-8 w-auto mb-1" />
-          <Link to="/forum" className="text-xs font-bold">FORUM</Link>
+          <Link to="/chat" className="text-xs font-bold">FORUM</Link> {/* Redirige vers /chat */}
         </li>
         <li className="flex flex-col items-center">
           <img src={bell} alt="Notifications" className="h-8 w-auto mb-1" />
@@ -40,6 +40,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/modify-profile" className="text-white">Modify Profile</Link>
+        </li>
+        <li>
+          <Link to="/review" className="text-white">Review</Link> {/* Bouton Review sans icône */}
         </li>
       </ul>
 
