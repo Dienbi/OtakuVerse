@@ -3,7 +3,7 @@ import otkauback from "../assets/images/otkauback.png";
 import naruto from "../assets/images/naruto.png";
 import dragon from "../assets/images/dragon.jfif";
 import demon from "../assets/images/demon.jfif";
-import berserk from "../assets/images/berserk.jfif";
+import berserk from "../assets/images/BERSERK.jfif";
 import one from "../assets/images/one-piece.png";
 import sakamoto from "../assets/images/Sakamoto.png";
 import otakuLogo from "../assets/images/WELCOME.webp"; 
